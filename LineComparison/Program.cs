@@ -12,6 +12,7 @@ namespace LineComparison
                 Console.WriteLine("1.LENGTH OF A LINE");
                 Console.WriteLine("2.TWO LINES ARE EQUAL OR NOT");
                 Console.WriteLine("3.CHECKING LINES ARE GREATER/LESSER/EQUAL");
+                Console.WriteLine("4.USING OOPS CONCEPT COMPARED 2 LINES");
                 Console.WriteLine("ENTER YOUR OPTION");
 
                 int select = Convert.ToInt32(Console.ReadLine());
@@ -31,6 +32,12 @@ namespace LineComparison
                     case 3:
                         Comparison.Compare comp=new Comparison.Compare();
                         comp.Comparison();  
+                        break;
+                    case 4:
+                   
+                    Java_oops.inHerit myObj1 = new Java_oops.inHerit();
+                        myObj1.oops();
+                        myObj1.comp1();                      
                         break;
                     default:
                         Console.WriteLine("ENTER A CORRECT OPTION");
