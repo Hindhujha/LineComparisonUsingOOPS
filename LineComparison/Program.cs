@@ -10,6 +10,7 @@ namespace LineComparison
             {
                 Console.WriteLine("-----------------");
                 Console.WriteLine("1.LENGTH OF A LINE");
+                Console.WriteLine("2.TWO LINES ARE EQUAL OR NOT");
                 Console.WriteLine("ENTER YOUR OPTION");
 
                 int select = Convert.ToInt32(Console.ReadLine());
@@ -20,6 +21,11 @@ namespace LineComparison
                         Length.Length_2 myObj = new Length.Length_2();
                         myObj.Linelength();
                         myObj.answer();
+                        break;
+                    case 2:
+                        Equals.Equal equal= new Equals.Equal();
+                        equal.Equals();
+                        equal.calc(); 
                         break;
                     default:
                         Console.WriteLine("ENTER A CORRECT OPTION");
